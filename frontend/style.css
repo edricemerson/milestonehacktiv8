@@ -1,4 +1,4 @@
-body{ 
+body {
     background-color: #364b7a;
 }
 
@@ -11,19 +11,19 @@ body{
 }
 
 .navbar-custom a {
-  color: #e5e7eb;
-  text-decoration: none;
-  font-weight: 500;
-  transition: 0.25s;
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.25s;
 }
 
 .navbar-custom a:hover {
-  color: #364b7a;
+    color: #364b7a;
 }
 
 .navbar-custom a.active {
-  color: #364b7a;
-  border-bottom: 2px solid #364b7a;
+    color: #364b7a;
+    border-bottom: 2px solid #364b7a;
 }
 
 
@@ -113,52 +113,136 @@ body{
 
 .create-acc:hover {
     color: rgba(255, 255, 255, 0.581);
-    transition:0.25s;
+    transition: 0.25s;
 }
 
 .slide-img {
     height: 690px;
-  object-fit: cover;
-  filter: brightness(0.4);
+    object-fit: cover;
+    filter: brightness(0.4);
 }
 
 .slide-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  
-  color: white;
-  text-align: center;
-  max-width: 800px;
-  padding: 0 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
 .slide-text h1 {
-  font-size: 3rem;
-  font-weight: bold;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .shop-logo {
-  width: 140px;
-  height: 60px;    
-  object-fit: contain; 
-  background: white;
-  padding: 8px;
-  border-radius: 12px;
+    width: 140px;
+    height: 60px;
+    object-fit: contain;
+    background: white;
+    padding: 8px;
+    border-radius: 12px;
 }
 
 
-.product-page h1{
+.product-page h1 {
     color: white;
     text-align: center;
 }
 
-.product-page h6{
+.product-page h6 {
     color: white;
     text-align: center;
 }
 
-.product-page{
-    height: 100px;
+.product-page {
+    background-color: #364b7a;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product-content {
     background-color: #0f172a;
+    margin-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.simple-card {
+    background-color: #364b7a;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+.simple-card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-content h6 {
+    margin-top: 35px;
+    color: white;
+    text-align: center;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #0f172a;
+    border: 2px solid #1e2c4c;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.download-btn:hover {
+    background-color: #1e2c4c;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.portfolio-page {
+    background-color: #364b7a;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-page h1 {
+    color: white;
+    text-align: center;
+}
+
+.portfolio-content{
+    background-color: #0f172a;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.portfolio-slide {
+  height: 250px;
+}
+
+
+.portfolio-box {
+  background: linear-gradient(145deg, #0f172a, #1e2c4c);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.portfolio-box h5 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
