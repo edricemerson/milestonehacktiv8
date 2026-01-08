@@ -2,10 +2,6 @@ body {
     background-color: #364b7a;
 }
 
-.theme-color {
-    background-color: #0f172a;
-}
-
 .navbar-custom {
     background-color: #0f172a;
 }
@@ -210,8 +206,8 @@ body {
 
 .portfolio-page {
     background-color: #364b7a;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .portfolio-page h1 {
@@ -219,7 +215,7 @@ body {
     text-align: center;
 }
 
-.portfolio-content{
+.portfolio-content {
     background-color: #0f172a;
     padding-left: 100px;
     padding-right: 100px;
@@ -227,22 +223,111 @@ body {
 }
 
 .portfolio-slide {
-  height: 250px;
+    height: 250px;
 }
 
 
 .portfolio-box {
-  background: linear-gradient(145deg, #0f172a, #1e2c4c);
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  padding: 30px;
+    background: linear-gradient(145deg, #0f172a, #1e2c4c);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
 .portfolio-box h5 {
-  font-weight: 600;
-  letter-spacing: 0.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
+
+.portfolio-slide {
+    height: 260px;
+}
+
+.portfolio-img {
+    height: 260px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.carousel-caption h5 {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    margin-bottom: 25px;
+}
+
+.portfolio-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+.portfolio-brand {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.portfolio-brand:hover {
+    transform: scale(1.05);
+}
+
+.about-logo{
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.about-page{
+    background-color: #0f172a;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+  
+}
+
+.location-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.location-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  filter: brightness(0.45);
+}
+
+.location-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.footer-custom{
+    background-color: black;
+}
+
+
