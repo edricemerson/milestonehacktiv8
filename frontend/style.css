@@ -11,15 +11,21 @@ body{
 }
 
 .navbar-custom a {
-    color: #e5e7eb;
-    text-decoration: none;
-    font-weight: 500;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.25s;
 }
 
 .navbar-custom a:hover {
-    color: #364b7a;
-    transition: 0.25s;
+  color: #364b7a;
 }
+
+.navbar-custom a.active {
+  color: #364b7a;
+  border-bottom: 2px solid #364b7a;
+}
+
 
 .logo-img {
     width: 125px;
@@ -110,13 +116,8 @@ body{
     transition:0.25s;
 }
 
-.slide {
-  position: relative;
-}
-
-.slide img {
-  width: 100%;
-  height: 500px;
+.slide-img {
+    height: 690px;
   object-fit: cover;
   filter: brightness(0.4);
 }
@@ -135,4 +136,29 @@ body{
 .slide-text h1 {
   font-size: 3rem;
   font-weight: bold;
+}
+
+.shop-logo {
+  width: 140px;
+  height: 60px;    
+  object-fit: contain; 
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+
+.product-page h1{
+    color: white;
+    text-align: center;
+}
+
+.product-page h6{
+    color: white;
+    text-align: center;
+}
+
+.product-page{
+    height: 100px;
+    background-color: #0f172a;
 }
