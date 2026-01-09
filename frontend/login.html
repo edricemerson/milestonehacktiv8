@@ -10,9 +10,10 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- navbar -->
-    <div class="container-fluid navbar-custom py-3">
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- NAVBAR -->
+    <div class="container-fluid navbar-custom py-3 fixed-top">
         <div class="row align-items-center">
             <div
                 class="col-lg-8 d-flex flex-wrap align-items-center gap-4 ps-4 justify-content-center justify-content-lg-start">
@@ -31,63 +32,60 @@
                 <a href="profile.html">
                     <img src="assets/user.png" class="rounded-4 user-img" alt="User">
                 </a>
-
             </div>
-
         </div>
     </div>
 
-    <div class="container d-flex justify-content-center my-5">
-        <div class="form-content card shadow rounded-4 p-4">
+    <!-- MAIN CONTENT -->
+    <main class="flex-fill d-flex align-items-center">
+        <div class="container d-flex justify-content-center my-5">
+            <div class="form-content card shadow rounded-4 p-4 w-100" style="max-width:420px;">
 
-            <h3 class="mb-4 text-center text-white">Log In</h3>
+                <h3 class="mb-4 text-center text-white">Log In</h3>
 
-            <form>
-                <div class="mb-3">
-                    <label class="form-label text-white">Username</label>
-                    <input type="text" class="form-control" placeholder="Enter your username" required>
-                </div>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label text-white">Username</label>
+                        <input type="text" class="form-control" placeholder="Enter your username" required>
+                    </div>
 
-                <div class="mb-4">
-                    <label class="form-label text-white">Password</label>
-                    <input type="password" class="form-control" placeholder="Enter your password" required>
-                </div>
+                    <div class="mb-4">
+                        <label class="form-label text-white">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
 
-                <div class="d-grid">
-                    <button type="submit" class="log-btn">Log In</button>
-                </div>
-            </form>
+                    <div class="d-grid">
+                        <button type="submit" class="log-btn">Log In</button>
+                    </div>
+                </form>
 
-            <a href="registration.html" class="create-acc mb-1">Create a new Account</a>
-            <p class="text-center text-white">To see latest product we will be sending via number</p>
+                <a href="registration.html" class="create-acc mb-2">Create a new Account</a>
+                <p class="text-center text-white small">
+                    To see latest products, we will send updates via phone number.
+                </p>
+            </div>
         </div>
-    </div>
+    </main>
 
-
-    <!-- footer -->
-    <footer class="container-fluid navbar-custom text-light mt-auto">
+    <!-- FOOTER -->
+    <footer class="container-fluid footer-custom text-light mt-auto">
         <div class="container py-4">
-
             <div class="row align-items-center">
                 <div class="col text-start">
-                    <p class="mb-0">
-                        Made using Bootstrap, HTML & CSS
-                    </p>
+                    <p class="mb-0">Made using Bootstrap, HTML & CSS</p>
                 </div>
 
                 <div class="col text-center">
-                    <p class="mb-0">
-                        © 2026 NRT PROTOOLS. All rights reserved.
-                    </p>
+                    <p class="mb-0">© 2026 NRT PROTOOLS. All rights reserved.</p>
                 </div>
 
                 <div class="col text-end">
                     <img src="assets/logo.jpg" class="logo-img rounded-4" alt="Logo">
                 </div>
             </div>
-
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 
