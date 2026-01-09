@@ -1,311 +1,305 @@
-/* ========== GLOBAL ========== */
-body {
-    background-color: #364b7a;
+/* ============================= */
+/*           GLOBAL              */
+/* ============================= */
+
+* {
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #364b7a;
+  margin: 0;
+  padding-top: 85px; /* space for fixed navbar */
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
 
-/* ========== NAVBAR ========== */
+/* ============================= */
+/*           NAVBAR              */
+/* ============================= */
+
 .navbar-custom {
-    background-color: #0f172a;
+  background-color: #0f172a;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 .navbar-custom a {
-    color: #e5e7eb;
-    font-weight: 500;
-    transition: 0.25s;
+  color: #e5e7eb;
+  font-weight: 500;
+  transition: 0.25s;
 }
 
 .navbar-custom a:hover {
-    color: #364b7a;
+  color: #60a5fa;
 }
 
 .navbar-custom a.active {
-    color: #364b7a;
-    border-bottom: 2px solid #364b7a;
+  color: #60a5fa;
+  border-bottom: 2px solid #60a5fa;
 }
 
-/* ========== IMAGES ========== */
+/* ============================= */
+/*           IMAGES              */
+/* ============================= */
+
 .logo-img {
-    width: 125px;
-    max-width: 100%;
-    height: auto;
+  width: 125px;
+  height: auto;
 }
 
 .user-img {
-    width: 32px;
-    max-width: 100%;
-    height: auto;
+  width: 32px;
+  height: auto;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
-/* ========== FOOTER ========== */
+.user-img:hover {
+  transform: scale(1.1);
+}
+
+/* ============================= */
+/*           FOOTER              */
+/* ============================= */
+
 .footer-custom {
-    background-color: black;
+  background-color: black;
 }
 
-/* ========== BUTTONS ========== */
-.log-btn {
-    background-color: #0f172a;
-    color: white;
-    border-radius: 10px;
-    font-weight: 500;
-    border: none;
-    transition: all 0.25s ease;
-}
+/* ============================= */
+/*           BUTTONS             */
+/* ============================= */
 
-.log-btn:hover {
-    background-color: #1e2c4c;
-    transform: translateY(-2px);
-}
-
+.log-btn,
 .download-btn {
-    display: inline-block;
-    background-color: #0f172a;
-    border: 2px solid #1e2c4c;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 10px;
-    font-weight: 500;
-    transition: all 0.25s ease;
+  background-color: #0f172a;
+  color: white;
+  border-radius: 10px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.25s ease;
 }
 
+.log-btn:hover,
 .download-btn:hover {
-    background-color: #1e2c4c;
-    transform: translateY(-2px);
+  background-color: #1e2c4c;
+  transform: translateY(-2px);
 }
 
-/* ========== FORM / CARD THEME ========== */
+/* ============================= */
+/*         FORM / CARD           */
+/* ============================= */
+
 .form-content {
-    background: linear-gradient(145deg, #0f172a, #1e2c4c);
-    width: 100%;
-    border: none;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  background: linear-gradient(145deg, #0f172a, #1e2c4c);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* Inputs & textarea */
 .form-content input,
 .form-content textarea {
-    background-color: #020617;
-    border: 1px solid #1e2c4c;
-    color: #e5e7eb;
-    border-radius: 10px;
-    resize: none;
+  background-color: #020617;
+  border: 1px solid #1e2c4c;
+  color: #e5e7eb;
+  border-radius: 10px;
 }
 
 .form-content input::placeholder,
 .form-content textarea::placeholder {
-    color: #94a3b8;
+  color: #94a3b8;
 }
 
 .form-content input:focus,
 .form-content textarea:focus {
-    background-color: #020617;
-    color: white;
-    border-color: #364b7a;
-    box-shadow: 0 0 0 0.2rem rgba(54, 75, 122, 0.35);
+  background-color: #020617;
+  color: white;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 0.2rem rgba(96,165,250,0.25);
 }
 
-/* Form titles */
-.form-content h3 {
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.form-content p {
-    font-size: 0.95rem;
-    color: #cbd5f5;
-}
-
-/* Profile image */
 .form-content img {
-    border: 3px solid #364b7a;
-    padding: 5px;
-    background-color: #020617;
+  border: 3px solid #60a5fa;
+  background-color: #020617;
 }
 
-/* Delete button */
-.form-content .btn-danger {
-    border-radius: 10px;
-    font-weight: 500;
-    transition: 0.25s;
-}
-
-.form-content .btn-danger:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
-}
-
-/* Create account button */
 .create-acc {
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-    background-color: #364b7a;
-    border-radius: 12px;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding: 6px;
-    transition: 0.25s;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 15px auto;
+  background-color: #364b7a;
+  border-radius: 12px;
+  padding: 6px;
+  width: 70%;
+  transition: 0.25s;
 }
 
 .create-acc:hover {
-    background-color: #274074;
-    color: rgba(255,255,255,0.7);
+  background-color: #274074;
+  color: rgba(255,255,255,0.7);
 }
 
-/* ========== HERO / SLIDER ========== */
+/* ============================= */
+/*         HERO SLIDER           */
+/* ============================= */
+
 .slide-img {
-    height: 690px;
-    object-fit: cover;
-    filter: brightness(0.4);
+  height: 690px;
+  object-fit: cover;
+  filter: brightness(0.4);
 }
 
 .slide-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    max-width: 800px;
-    padding: 0 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  max-width: 850px;
+  padding: 0 20px;
 }
 
 .slide-text h1 {
-    font-size: 3rem;
-    font-weight: bold;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-/* Shop logos */
 .shop-logo {
-    width: 140px;
-    height: 60px;
-    object-fit: contain;
-    background: white;
-    padding: 8px;
-    border-radius: 12px;
-    transition: 0.25s;
+  width: 140px;
+  height: 60px;
+  object-fit: contain;
+  background: white;
+  padding: 8px;
+  border-radius: 12px;
+  transition: 0.25s;
 }
 
 .shop-logo:hover {
-    transform: scale(1.08);
+  transform: scale(1.08);
 }
 
-/* ========== PRODUCTS ========== */
+/* ============================= */
+/*            PRODUCTS           */
+/* ============================= */
+
 .product-page {
-    background-color: #364b7a;
-    margin: 10px 0;
+  background-color: #364b7a;
+  margin: 10px 0;
+  padding: 20px 0;
 }
 
 .product-page h1,
 .product-page h6 {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .product-content {
-    background-color: #0f172a;
-    margin-top: 35px;
-    padding: 35px 30px;
+  background-color: #0f172a;
+  padding: 35px 30px;
 }
 
 .simple-card {
-    background-color: #364b7a;
-    color: white;
-    border: none;
-    border-radius: 12px;
-    transition: 0.25s;
+  background-color: #364b7a;
+  color: white;
+  border-radius: 14px;
+  border: none;
+  transition: 0.25s;
 }
 
 .simple-card:hover {
-    transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
 .simple-card img {
-    height: 180px;
-    object-fit: cover;
+  height: 180px;
+  object-fit: cover;
 }
 
-.product-content h6 {
-    margin-top: 35px;
-    color: white;
-    text-align: center;
-}
+/* ============================= */
+/*           PORTFOLIO           */
+/* ============================= */
 
-/* ========== PORTFOLIO ========== */
 .portfolio-page {
-    background-color: #364b7a;
-    margin: 30px 0;
+  background-color: #364b7a;
+  margin: 30px 0;
+  padding: 20px 0;
 }
 
 .portfolio-page h1 {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 
 .portfolio-content {
-    background-color: #0f172a;
-    padding: 50px 100px;
-}
-
-.portfolio-slide,
-.portfolio-img {
-    height: 260px;
-    object-fit: cover;
+  background-color: #0f172a;
+  padding: 50px 100px;
 }
 
 .portfolio-img {
-    filter: brightness(0.6);
-}
-
-.carousel-caption {
-    bottom: 20%;
+  height: 260px;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 
 .carousel-caption h5 {
-    font-weight: 600;
-    letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-.portfolio-section,
-.portfolio-section2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    flex-wrap: wrap;
-    margin: 30px 0;
+/* BRAND GRID */
+
+.portfolio-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px 10px;
+  margin-top: 50px;
+}
+
+.col-brand {
+  flex: 0 0 20%;
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
 .portfolio-brand {
-    height: 100px;
-    object-fit: contain;
-    border-radius: 20px;
-    transition: 0.25s;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 16px;
+  transition: 0.25s;
 }
 
 .portfolio-brand:hover {
-    transform: scale(1.05);
+  transform: scale(1.1);
 }
 
-/* ========== ABOUT ========== */
+/* ============================= */
+/*              ABOUT            */
+/* ============================= */
+
 .about-page {
-    background-color: #0f172a;
-    padding: 50px 100px;
+  background-color: #0f172a;
+  padding: 50px 100px;
 }
 
 .about-logo {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
-/* ========== LOCATIONS ========== */
+/* ============================= */
+/*            LOCATION           */
+/* ============================= */
+
 .location-card {
   position: relative;
   overflow: hidden;
@@ -328,7 +322,10 @@ a {
   text-align: center;
 }
 
-/* ========== STAR RATING ========== */
+/* ============================= */
+/*          STAR RATING          */
+/* ============================= */
+
 .star-rating {
   direction: rtl;
   display: inline-flex;
@@ -342,13 +339,13 @@ a {
 .star-rating label {
   color: #444;
   cursor: pointer;
-  transition: color 0.2s, transform 0.2s;
+  transition: 0.2s;
 }
 
 .star-rating label:hover,
 .star-rating label:hover ~ label {
   color: gold;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .star-rating input:checked ~ label {
