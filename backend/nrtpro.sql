@@ -20,19 +20,21 @@ CREATE TABLE reviews (
 );
 
 INSERT INTO users (username, phone, password, account_type)
-VALUES (?, ?, ?, ?);
+VALUES ("Edric", 0811839121, 112233, "business");
 
 INSERT INTO reviews (name_review, rating, message_review)
-VALUES (?, ?, ?, ?);
+VALUES ("Edric", 5, "This company is trustable");
+
+SELECT * FROM users ;
+SELECT * FROM reviews;
 
 SELECT * FROM users 
-WHERE username = ?;
+WHERE account_type = "personal";
 
 SELECT * FROM reviews 
-WHERE username = ?;
+WHERE rating = 1;
 
 UPDATE reviews
-SET message = ?, rating = ?
-WHERE id = ?;
+SET username = "Anonymous" WHERE username = --inapproptiate names
 
-DELETE FROM reviews WHERE id = ?;
+DELETE FROM reviews WHERE rating = 1;
